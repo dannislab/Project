@@ -1,0 +1,429 @@
+/* ========================================
+   PAGE HEADER
+   ======================================== */
+
+.page-header {
+  margin-bottom: 35px;
+}
+
+.page-eyebrow {
+  color: #0F4C5C;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.page-header h1 {
+  margin: 0 0 2px;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  
+}
+
+.page-subtitle {
+  color: #60555D;
+  font-size: 16px;
+}
+
+
+/* ========================================
+   1. PAGE LAYOUT
+   ======================================== */
+.collection-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+.section-label {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  color: #60555D;
+  margin-bottom: 16px;
+}
+
+/* ========================================
+   2. POKÉMON GALLERY
+   ======================================== */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));  
+  gap: 16px;
+  align-content: start;
+}
+
+
+
+/* ========================================
+   3. POKÉMON CARDS
+   ======================================== */
+
+.pokemon-card {
+  position: relative;
+  border: 1px solid #D9CED6;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.pokemon-card.selected {
+  border-color: #0F4C5C;
+  background-color: #F3F0EA;
+}
+
+.pokemon-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+.pokemon-number {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.pokemon-card h2 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  overflow-wrap: break-word;
+}
+
+/* Shared badge styling */
+.pokemon-type {
+  display: inline-block;
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 11px;
+  line-height: 1.2;
+  color: #303437;
+  background-color: #E6E4E1;
+}
+
+/* Pokémon type colours */
+.pokemon-type.type-grass {
+  background-color: #E2EEDB;
+}
+
+.pokemon-type.type-fire {
+  background-color: #FFE3D3;
+}
+
+.pokemon-type.type-water {
+  background-color: #DCECF4;
+}
+
+.pokemon-type.type-electric {
+  background-color: #FFF2C8;
+}
+
+.pokemon-type.type-normal {
+  background-color: #EBE8E4;
+}
+
+.pokemon-type.type-psychic {
+  background-color: #EEE1F4;
+}
+
+.pokemon-type.type-ghost {
+  background-color: #E4DDF0;
+}
+
+.pokemon-type.type-dragon {
+  background-color: #DEE5F5;
+}
+
+.pokemon-type.type-fighting {
+  background-color: #F4E0D9;
+}
+
+.pokemon-type.type-rock {
+  background-color: #E9E3D9;
+}
+
+
+
+
+.favourite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  border: none;
+  background: transparent;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 1;
+  color: #8C7F88;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favourite-button:hover {
+  color: #0F4C5C;
+}
+
+.favourite-button.active {
+  color: #B56B7A;
+}
+
+
+/* ========================================
+   4. POKÉMON DETAIL PANEL
+   ======================================== */
+
+.pokemon-detail {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+}
+
+.detail-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.detail-number {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text);
+}
+
+.detail-artwork {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 260px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+}
+
+.detail-panel {
+  background-color: #F5F2EC;
+  border: 1px solid #E6E4E1;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+/* Detail text and typography */
+
+.detail-content {
+  margin-top: 8px;
+}
+
+.detail-name {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.detail-description {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 24px;
+  max-width: 42ch;
+}
+
+/* HP and Attack statistics */
+
+.detail-stats {
+  border-top: 1px solid #D9CED6;
+  padding-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 36px;
+  align-items: center;
+  gap: 12px;
+
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--text-h);
+}
+
+.stat-track {
+  height: 7px;
+  background-color: #E6E4E1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background-color: #0F4C5C;
+  border-radius: 999px;
+}
+
+
+/* ========================================
+   5. FILTER CONTROLS
+   ======================================== */
+
+.type-filter {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #D9CED6;
+  border-radius: 999px;
+  background-color: #FCFBF7;
+  color: #303437;
+  cursor: pointer;
+}
+
+/* Default active filter — All */
+.type-filter.active {
+  background-color: #0F4C5C;
+  border-color: #0F4C5C;
+  color: white;
+  font-weight: 600;
+}
+
+/* Active Pokémon type colours */
+.type-filter.active.type-grass {
+  background-color: #E2EEDB;
+  border-color: #8BA77F;
+  color: #303437;
+}
+
+.type-filter.active.type-fire {
+  background-color: #FFE3D3;
+  border-color: #D8A18B;
+  color: #303437;
+}
+
+.type-filter.active.type-water {
+  background-color: #DCECF4;
+  border-color: #8BAFBF;
+  color: #303437;
+}
+
+.type-filter.active.type-electric {
+  background-color: #FFF2C8;
+  border-color: #D6C27F;
+  color: #303437;
+}
+
+.type-filter.active.type-normal {
+  background-color: #EBE8E4;
+  border-color: #B5ADA6;
+  color: #303437;
+}
+
+.type-filter.active.type-psychic {
+  background-color: #EEE1F4;
+  border-color: #B99AC9;
+  color: #303437;
+}
+
+.type-filter.active.type-ghost {
+  background-color: #E4DDF0;
+  border-color: #A495BE;
+  color: #303437;
+}
+
+.type-filter.active.type-dragon {
+  background-color: #DEE5F5;
+  border-color: #94A7CF;
+  color: #303437;
+}
+
+.type-filter.active.type-fighting {
+  background-color: #F4E0D9;
+  border-color: #CAA08F;
+  color: #303437;
+}
+
+.type-filter.active.type-rock {
+  background-color: #E9E3D9;
+  border-color: #B4A58C;
+  color: #303437;
+}
+
+.type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.pokemon-search {
+  width: 240px;
+  max-width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #D9CED6;
+  border-radius: 999px;
+  background-color: #FCFBF7;
+  color: #303437;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+/* ========================================
+   6. RESPONSIVE STYLES
+      ======================================== */
+
+   @media (max-width: 1024px) {
+  .collection-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pokemon-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pokemon-detail {
+    position: static;
+  }
+}
+
+
+/* Mobile view */
+
+@media (max-width: 600px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .collection-layout {
+    gap: 24px;
+  }
+
+  .detail-panel {
+    padding: 16px;
+  }
+
+  .detail-artwork {
+    max-width: 220px;
+    height: 200px;
+  }
+
+  .pokemon-card {
+    padding: 10px;
+  }
+
+  .pokemon-card img {
+    height: 90px;
+  }
+}
