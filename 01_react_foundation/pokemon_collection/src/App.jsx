@@ -68,6 +68,9 @@ const handlePokemonSelect = (pokemon) => {
   return (
     <>
       <header className="page-header">
+        <a className="back-link" href="/D3_Course/">
+          ← Back to the Sketchbook
+        </a>
         <p className="page-eyebrow"> POKEDEX </p>
         <h1> The Pokemon Collection </h1>
         <p className="page-subtitle"> Twenty Pokemon. Ten types.</p>
@@ -102,7 +105,7 @@ const handlePokemonSelect = (pokemon) => {
 
       <div className="collection-layout">
         <div className="collection-gallery">
-          <p className = "section-label">01 / THE COLLECTION </p>
+          <p className="section-label">01 / THE COLLECTION </p>
           <div className="pokemon-grid">
             {filteredPokemons.length === 0 ? (
               <p> No Pokemon found </p>

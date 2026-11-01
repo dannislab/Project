@@ -1,6 +1,20 @@
 /* ========================================
    PAGE HEADER
    ======================================== */
+.back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: #60555D;
+  font-family: var(--sans);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #0F4C5C;
+  text-decoration: underline;
+}
 
 .page-header {
   margin-bottom: 35px;
