@@ -1,37 +1,39 @@
-
 /* ========================================
    1. GLOBAL / BASE STYLES
    ======================================== */
 body {
-  background-color: #FCFBF7;
+  background-color: #fcfbf7;
   font-family: Arial, Helvetica, sans-serif;
   color: #303437;
   background-image: url("images/paper-texture.svg");
   background-repeat: repeat;
 }
 
-
 /* ========================================
    2. NAVIGATION
    ======================================== */
 .back-link {
-    position: absolute;
-    top: 32px;
-    left: 40px;
-    color: #60555D;
-    font-size: 13px;
-    text-decoration: none;
-    transition: color 0.2s ease;
+  position: absolute;
+  top: 32px;
+  left: 40px;
+  color: #60555d;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .back-link:hover {
-    color: #0F4C5C;
-    text-decoration: underline;
+  color: #0f4c5c;
+  text-decoration: underline;
 }
 
+.back-link:visited {
+  color: #60555d;
+}
 
-
-nav { 
+nav {
   padding: 24px 40px 0;
 }
 
@@ -48,17 +50,15 @@ nav ul {
 /* Navigation links */
 nav a {
   font-size: 16px;
-  color: #60555D;
-  text-decoration:none;
+  color: #60555d;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 /* Hover interaction */
 nav a:hover {
-    color: #303437;
-
+  color: #303437;
 }
-
 
 /* ========================================
    3. HERO / INTRODUCTION
@@ -77,32 +77,28 @@ h1 {
 }
 
 .hero-eyebrow {
-    font-size: 12px;
-    letter-spacing: 3px;
-    color: #60555D;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #60555d;
 }
 
 .hero h1 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .hero-tagline {
-    margin-top: 0;
+  margin-top: 0;
 }
-
-
 
 /* ========================================
    4. COLLECTION CARDS
    ======================================== */
-
 
 #collection {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px 80px;
 }
-
 
 #collection h2,
 #featured-work h2,
@@ -116,61 +112,56 @@ h1 {
 }
 
 #collection h2::before {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 1px;
-    background-color: #B9AEB3;
-    margin: 0 auto 18px;
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  background-color: #b9aeb3;
+  margin: 0 auto 18px;
 }
 
-
-   .collection-cards {
-    display: flex;
-    gap: 24px;
+.collection-cards {
+  display: flex;
+  gap: 24px;
 }
 
 .collection-card {
-    flex: 1;
-    min-width: 0;  /* Allow flex items to shrink below their content width */
+  flex: 1;
+  min-width: 0; /* Allow flex items to shrink below their content width */
 }
 
 .collection-card img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .collection-card img:hover {
   transform: translateY(-4px);
 }
 
-
 .card-status {
-    font-size: 12px;
-    color: #60555D;
-    font-style: italic;
-    margin-top: 0px;
+  font-size: 12px;
+  color: #60555d;
+  font-style: italic;
+  margin-top: 0px;
 }
 
 .card-label {
-    font-size: 12px;
-    color: #60555D;
-    letter-spacing: 1.5px;
-    margin-bottom: 8px;
+  font-size: 12px;
+  color: #60555d;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
 }
-
 
 .collection-card h3 {
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: #303437;
-    margin-top: 0px;
-    margin-bottom: 8px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #303437;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
-
-
 
 /* ========================================
    5. FEATURED WORK
@@ -183,114 +174,110 @@ h1 {
 }
 
 .featured-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
 }
 
 #featured-work h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: #303437;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #303437;
 }
 
-
 #featured-work p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #60555D;
-    max-width: 650px;
-    margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #60555d;
+  max-width: 650px;
+  margin-bottom: 24px;
 }
 
 #featured-work iframe {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    border: 0;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
 }
-
 
 /* ========================================
    6. FIND ME ONLINE
    ======================================== */
 
 #find-me-online {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 40px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
 }
 
-
 .online-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .online-links a {
-    color: #303437;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+  color: #303437;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .online-links a:hover {
-    color: #60555D;
+  color: #60555d;
 }
 
 .online-links a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .online-links img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-
 @media (max-width: 700px) {
-      nav {
-        padding: 20px 12px 0;
-    }
+  nav {
+    padding: 20px 12px 0;
+  }
 
-    nav ul {
-        justify-content: center;
-        gap: 14px;
-    }
+  nav ul {
+    justify-content: center;
+    gap: 14px;
+  }
 
-    nav a {
-        font-size: 12px;
-    }
+  nav a {
+    font-size: 12px;
+  }
 
-    .hero {
+  .hero {
     padding: 40px 20px;
-    } 
+  }
 
-    .collection-cards {
-        flex-direction: column;
-    }
+  .collection-cards {
+    flex-direction: column;
+  }
 
-    .online-links {
+  .online-links {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    }
+  }
 
-    #featured-work {
-        padding: 0 20px 48px;
-    }
+  #featured-work {
+    padding: 0 20px 48px;
+  }
 }
 
 @media (min-width: 1101px) {
-    .featured-content {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        gap: 32px;
-        align-items: center;
-    }
+  .featured-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 32px;
+    align-items: center;
+  }
 }

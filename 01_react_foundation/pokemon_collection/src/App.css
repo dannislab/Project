@@ -3,8 +3,8 @@
    ======================================== */
 .back-link {
   display: inline-block;
-  margin-bottom: 32px;
-  color: #60555D;
+  margin-bottom: 12px;
+  color: #60555d;
   font-family: var(--sans);
   font-size: 13px;
   text-decoration: none;
@@ -12,7 +12,7 @@
 }
 
 .back-link:hover {
-  color: #0F4C5C;
+  color: #0f4c5c;
   text-decoration: underline;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .page-eyebrow {
-  color: #0F4C5C;
+  color: #0f4c5c;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -32,14 +32,12 @@
   margin: 0 0 2px;
   line-height: 1;
   letter-spacing: -1.5px;
-  
 }
 
 .page-subtitle {
-  color: #60555D;
+  color: #60555d;
   font-size: 16px;
 }
-
 
 /* ========================================
    1. PAGE LAYOUT
@@ -55,7 +53,7 @@
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 1.8px;
-  color: #60555D;
+  color: #60555d;
   margin-bottom: 16px;
 }
 
@@ -64,12 +62,10 @@
    ======================================== */
 .pokemon-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0,1fr));  
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   align-content: start;
 }
-
-
 
 /* ========================================
    3. POKÉMON CARDS
@@ -77,14 +73,14 @@
 
 .pokemon-card {
   position: relative;
-  border: 1px solid #D9CED6;
+  border: 1px solid #d9ced6;
   padding: 12px;
   border-radius: 12px;
 }
 
 .pokemon-card.selected {
-  border-color: #0F4C5C;
-  background-color: #F3F0EA;
+  border-color: #0f4c5c;
+  background-color: #f3f0ea;
 }
 
 .pokemon-card img {
@@ -92,7 +88,6 @@
   height: 100px;
   object-fit: contain;
 }
-
 
 .pokemon-number {
   font-family: var(--sans);
@@ -118,52 +113,49 @@
   font-size: 11px;
   line-height: 1.2;
   color: #303437;
-  background-color: #E6E4E1;
+  background-color: #e6e4e1;
 }
 
 /* Pokémon type colours */
 .pokemon-type.type-grass {
-  background-color: #E2EEDB;
+  background-color: #e2eedb;
 }
 
 .pokemon-type.type-fire {
-  background-color: #FFE3D3;
+  background-color: #ffe3d3;
 }
 
 .pokemon-type.type-water {
-  background-color: #DCECF4;
+  background-color: #dcecf4;
 }
 
 .pokemon-type.type-electric {
-  background-color: #FFF2C8;
+  background-color: #fff2c8;
 }
 
 .pokemon-type.type-normal {
-  background-color: #EBE8E4;
+  background-color: #ebe8e4;
 }
 
 .pokemon-type.type-psychic {
-  background-color: #EEE1F4;
+  background-color: #eee1f4;
 }
 
 .pokemon-type.type-ghost {
-  background-color: #E4DDF0;
+  background-color: #e4ddf0;
 }
 
 .pokemon-type.type-dragon {
-  background-color: #DEE5F5;
+  background-color: #dee5f5;
 }
 
 .pokemon-type.type-fighting {
-  background-color: #F4E0D9;
+  background-color: #f4e0d9;
 }
 
 .pokemon-type.type-rock {
-  background-color: #E9E3D9;
+  background-color: #e9e3d9;
 }
-
-
-
 
 .favourite-button {
   position: absolute;
@@ -176,7 +168,7 @@
 
   font-size: 20px;
   line-height: 1;
-  color: #8C7F88;
+  color: #8c7f88;
   cursor: pointer;
 
   display: inline-flex;
@@ -185,13 +177,12 @@
 }
 
 .favourite-button:hover {
-  color: #0F4C5C;
+  color: #0f4c5c;
 }
 
 .favourite-button.active {
-  color: #B56B7A;
+  color: #b56b7a;
 }
-
 
 /* ========================================
    4. POKÉMON DETAIL PANEL
@@ -228,8 +219,8 @@
 }
 
 .detail-panel {
-  background-color: #F5F2EC;
-  border: 1px solid #E6E4E1;
+  background-color: #f5f2ec;
+  border: 1px solid #e6e4e1;
   border-radius: 12px;
   padding: 24px;
 }
@@ -258,7 +249,7 @@
 /* HP and Attack statistics */
 
 .detail-stats {
-  border-top: 1px solid #D9CED6;
+  border-top: 1px solid #d9ced6;
   padding-top: 16px;
   display: grid;
   gap: 12px;
@@ -277,17 +268,16 @@
 
 .stat-track {
   height: 7px;
-  background-color: #E6E4E1;
+  background-color: #e6e4e1;
   border-radius: 999px;
   overflow: hidden;
 }
 
 .stat-fill {
   height: 100%;
-  background-color: #0F4C5C;
+  background-color: #0f4c5c;
   border-radius: 999px;
 }
-
 
 /* ========================================
    5. FILTER CONTROLS
@@ -296,79 +286,79 @@
 .type-filter {
   display: inline-block;
   padding: 8px 16px;
-  border: 1px solid #D9CED6;
+  border: 1px solid #d9ced6;
   border-radius: 999px;
-  background-color: #FCFBF7;
+  background-color: #fcfbf7;
   color: #303437;
   cursor: pointer;
 }
 
 /* Default active filter — All */
 .type-filter.active {
-  background-color: #0F4C5C;
-  border-color: #0F4C5C;
+  background-color: #0f4c5c;
+  border-color: #0f4c5c;
   color: white;
   font-weight: 600;
 }
 
 /* Active Pokémon type colours */
 .type-filter.active.type-grass {
-  background-color: #E2EEDB;
-  border-color: #8BA77F;
+  background-color: #e2eedb;
+  border-color: #8ba77f;
   color: #303437;
 }
 
 .type-filter.active.type-fire {
-  background-color: #FFE3D3;
-  border-color: #D8A18B;
+  background-color: #ffe3d3;
+  border-color: #d8a18b;
   color: #303437;
 }
 
 .type-filter.active.type-water {
-  background-color: #DCECF4;
-  border-color: #8BAFBF;
+  background-color: #dcecf4;
+  border-color: #8bafbf;
   color: #303437;
 }
 
 .type-filter.active.type-electric {
-  background-color: #FFF2C8;
-  border-color: #D6C27F;
+  background-color: #fff2c8;
+  border-color: #d6c27f;
   color: #303437;
 }
 
 .type-filter.active.type-normal {
-  background-color: #EBE8E4;
-  border-color: #B5ADA6;
+  background-color: #ebe8e4;
+  border-color: #b5ada6;
   color: #303437;
 }
 
 .type-filter.active.type-psychic {
-  background-color: #EEE1F4;
-  border-color: #B99AC9;
+  background-color: #eee1f4;
+  border-color: #b99ac9;
   color: #303437;
 }
 
 .type-filter.active.type-ghost {
-  background-color: #E4DDF0;
-  border-color: #A495BE;
+  background-color: #e4ddf0;
+  border-color: #a495be;
   color: #303437;
 }
 
 .type-filter.active.type-dragon {
-  background-color: #DEE5F5;
-  border-color: #94A7CF;
+  background-color: #dee5f5;
+  border-color: #94a7cf;
   color: #303437;
 }
 
 .type-filter.active.type-fighting {
-  background-color: #F4E0D9;
-  border-color: #CAA08F;
+  background-color: #f4e0d9;
+  border-color: #caa08f;
   color: #303437;
 }
 
 .type-filter.active.type-rock {
-  background-color: #E9E3D9;
-  border-color: #B4A58C;
+  background-color: #e9e3d9;
+  border-color: #b4a58c;
   color: #303437;
 }
 
@@ -383,9 +373,9 @@
   width: 240px;
   max-width: 100%;
   padding: 8px 12px;
-  border: 1px solid #D9CED6;
+  border: 1px solid #d9ced6;
   border-radius: 999px;
-  background-color: #FCFBF7;
+  background-color: #fcfbf7;
   color: #303437;
   font-family: inherit;
   font-size: 14px;
@@ -397,7 +387,7 @@
    6. RESPONSIVE STYLES
       ======================================== */
 
-   @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .collection-layout {
     grid-template-columns: 1fr;
   }
@@ -410,7 +400,6 @@
     position: static;
   }
 }
-
 
 /* Mobile view */
 
